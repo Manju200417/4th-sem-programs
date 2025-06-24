@@ -1,0 +1,27 @@
+<!-- 17. Write a program to rectangle translation .  -->
+<html>
+
+<body>
+  <h1>HTML5 Canvas</h1>
+  <h2>The translate() Method</h2>
+  <canvas id="canvas" width="250" height="200" style="border:1px solid;"></canvas>
+  <script>
+    const ctx = canvas.getContext("2d");
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.translate(70, 70);
+    ctx.fillRect(10, 10, 100, 50);
+  </script>
+</body>
+
+</html>
+
+
+<!-- 
+<html><body><h2>canvas translate()</h2>
+  <canvas id="myc" width="250" height="200">
+  </canvas><script>
+    let ctx=document.getElementById('myc').getContext("2d");
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.translate(70, 70);
+    ctx.fillRect(10, 10, 100, 50);
+  </script></body></html> -->

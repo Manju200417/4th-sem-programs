@@ -1,0 +1,39 @@
+<!-- 9. Write a JavaScript program to display the current day and time   -->
+<html>
+
+<body>
+    <script>
+        let d = new Date();
+        document.write("Full Date is : ", d)
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.write("<br> Today is : ", days[d.getDay()])
+        document.write("<br> Time is :", d.getHours(), ":", d.getMinutes(), ":", d.getSeconds())
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<script>
+let d = new Date();
+let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let day = days[d.getDay()];
+document.write(`Current Date and Time:<br>${day}, ${d.toLocaleDateString()}<br>${d.toLocaleTimeString()}`);
+</script>
+</body>
+</html> -->

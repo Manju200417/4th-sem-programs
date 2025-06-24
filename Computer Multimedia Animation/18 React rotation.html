@@ -1,0 +1,123 @@
+<!-- 18. Write a program to rectangle rotation .  -->
+<html>
+
+<body style="background-color: aquamarine;">
+  <h1>HTML5 Canvas</h1>
+  <h2>The rotate() Method</h2>
+  <canvas id="myCanvas" width="250" height="150" style="border:1px solid grey"></canvas>
+  <script>
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    // ctx.rotate(20 * Math.PI / 180);
+    ctx.rotate(0.5);
+    ctx.fillRect(50, 20, 100, 50); 
+  </script>
+</body>
+
+</html>
+
+
+
+<!-- <html><body>
+  <h2>rotate()</h2>
+  <canvas id="myc"width="250"height="150">
+  </canvas><script>
+    let ctx = document.getElementById("myc").getContext("2d");
+    ctx.rotate(20 * Math.PI / 180);
+    ctx.fillRect(50, 20, 100, 50); 
+  </script></body></html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html><body><h1> Rectangle rotation</h1>
+<canvas id="canvas" width="400" height="400"
+ style="border:1px solid;"></canvas><script>
+      const ctx = canvas.getContext("2d");
+      ctx.strokeStyle = "orange";
+      ctx.translate(100, 100);
+      ctx.strokeRect(0, 0, 200, 100);
+      ctx.rotate(Math.PI / 8);
+      ctx.strokeRect(0, 0, 200, 100);
+      ctx.rotate(Math.PI / 10);
+ ctx.strokeRect(0, 0, 200, 100);</script></body></html>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html><body>
+  <canvas id="canvas" width="400" height="400"style="border:1px solid;">
+  </canvas>
+    <script>
+    //   const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.strokeStyle = "orange";
+      ctx.translate(100, 100); // Move origin for rotation center
+
+      // First rectangle (no rotation)
+      ctx.strokeRect(0, 0, 200, 100);
+
+      // Rotate 22.5 degrees (π/8 radians) and draw
+      ctx.rotate(Math.PI / 8);
+      ctx.strokeRect(0, 0, 200, 100);
+
+      // Rotate another 18 degrees (π/10 radians) and draw
+      ctx.rotate(Math.PI / 10);
+      ctx.strokeRect(0, 0, 200, 100);
+  </script>
+</body>
+</html> -->

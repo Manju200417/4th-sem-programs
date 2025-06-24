@@ -1,0 +1,103 @@
+    <!-- 16. Write a program to create Draw Linear Gradient   -->
+<html>
+
+<body>
+  <h1>HTML5 Canvas</h1>
+  <h2>The createLinearGradient() Method</h2>
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+  <script>
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    const grd = ctx.createLinearGradient(0, 0, 170, 0);
+    grd.addColorStop(0, "blue");
+    grd.addColorStop(1, "white");
+    ctx.fillStyle = grd;
+    ctx.fillRect(20, 20, 150, 100); 
+  </script>
+</body>
+
+</html>
+
+
+<!-- <html><body>
+  <canvas id="myc" width="300" height="150"></canvas><script>
+    let ctx = document.getElementById("myc").getContext("2d")
+    let grd = ctx.createLinearGradient(0, 0, 170, 0);
+    grd.addColorStop(0, "blue");
+    grd.addColorStop(1, "white");
+    ctx.fillStyle = grd;
+    ctx.fillRect(20, 20, 150, 100); 
+</script></body></html> -->
+
+
+
+
+
+
+<!-- 
+<html><body>
+  <canvas id="canvas" width="400" height="200"
+ style="border: 2px solid;">  </canvas> <script>
+  const ctx = canvas.getContext('2d');
+    const lg = ctx.createLinearGradient(0,200,0,0);
+    lg.addColorStop(0, 'red');     
+    lg.addColorStop(0.5, 'yellow');
+    lg.addColorStop(1, 'green');   
+    ctx.fillStyle = lg;
+    ctx.fillRect(0, 0, 400, 200);
+  </script></body></html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html><body>
+  <canvas id="canvas" width="400" height="200" style="border: 2px solid;"></canvas>
+  <script>
+    const canvas = document.getElementById('canvas');      // Optionl
+    const ctx = canvas.getContext('2d');
+
+    // Create linear gradient from left (0,0) to right (400,0)
+    const lg = ctx.createLinearGradient(0,200,0,0);
+
+    // Define color stops
+    lg.addColorStop(0, 'red');      // start color
+    lg.addColorStop(0.5, 'yellow'); // middle color
+    lg.addColorStop(1, 'green');    // end color
+
+    // Set fill style to gradient and draw rectangle
+    ctx.fillStyle = lg;
+    ctx.fillRect(0, 0, 400, 200);
+  </script>
+</body></html>
+
+ -->
+
+
+
+<!-- ctx.createLinearGradient(x0, y0, x1, y1)
+Parameters
+x0, y0: Coordinates of the starting point of the gradient.
+
+x1, y1: Coordinates of the ending point of the gradient. -->

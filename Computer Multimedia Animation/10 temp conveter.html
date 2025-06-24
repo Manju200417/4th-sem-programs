@@ -1,0 +1,94 @@
+<!-- 10. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit. -->
+<html>
+
+<head>
+  <title>Program 10</title>
+</head>
+
+<body>
+  <h1>Conversion of Celsius to Fahrenheit and Fahrenheit to Celsius</h1>
+
+  <label>Enter Temperature</label>
+  <input id="cel" placeholder="Enter a number"><br><br>
+
+  <button onclick="celToFehr()">Convert Celsius to Fahrenheit</button><br><br>
+  <button onclick="fehrToCel()">Convert Fahrenheit to Celsius</button>
+
+  <h2 id="result"></h2>
+
+  <script>
+    function celToFehr() {
+      var cTemp = parseFloat(document.getElementById("cel").value);
+      var c_f = (cTemp * 9 / 5) + 32;
+      document.getElementById("result").innerHTML = "Celsius to Fahrenheit :"+c_f;
+    }
+
+    function fehrToCel() {
+      var fTemp = parseFloat(document.getElementById("cel").value);
+      var f_c = (fTemp - 32) * 5 / 9;
+      document.getElementById("result").innerHTML = "Fahrenheit to Celsius :"+f_c;
+    }
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+
+<body>
+  <h3>Temperature Convert</h3>
+  <input id="temp" type="number" placeholder="Enter Temperature">
+  <select id="sel">
+    <option value="F">To Fahrenheit</option>
+    <option value="C">To Celsius</option>
+  </select>
+  <button onclick="con()">Convert</button>
+  <p id="res"></p>
+
+  <script>
+    function con() {
+      let t = parseFloat(temp.value),
+        u = sel.value,
+        r = u === "F" ? (t * 9 / 5 + 32) + " F" : ((t - 32) * 5 / 9).toFixed(2) + " C";
+      res.innerText = r;
+    }
+  </script>
+</body>
+
+</html> -->
